@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- make container for cards and give id -->
+
+    <div class="card">
+      <div class="search">
+        <input type="text" class="search-bar" />
+        <button type="button">Enter</button>
+      </div>
+      <div class="container">
+        <div class="weather">
+          <h2 class="city">The Weather App</h2>
+          <h1 class="temp"></h1>
+          <div class="flex">
+            <img src="" alt="" class="icon" />
+            <div class="text"></div>
+          </div>
+          <div class="humidity"></div>
+          <div class="wind"></div>
+        </div>
+      </div>
+      <button type="button" onclick="showHideSearchBar()">+</button>
+      <button type="button" onclick="clearLocalStorage()">Clear</button>
+    </div>
+
+    <!-- <div class="container">
+      <br />
+      <br />
+      <h1>Weather</h1>
+      <br />
+      <br />
+      <div id="list-items"></div>
+    </div>
+
+
+<div class="container">
+  <form action="./citiespage.html">
+  <label for="fname">City Name</label><br>
+  <input type="text" id="cityname" name="cityname" value=""><br>
+  <input type="submit" value="Fetch weather" onclick="fetchWeather()">
+  </form> 
+</div>
+
+    
+         -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
