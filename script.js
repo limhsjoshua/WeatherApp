@@ -25,7 +25,7 @@ let weather = {
   apiKey: "8b56cf4f39ce44cb84823519222306",
   fetchWeatherAndAddToLS: function (city) {
     fetch(
-      "http://api.weatherapi.com/v1/current.json?key=" +
+      "https://api.weatherapi.com/v1/current.json?key=" +
         this.apiKey +
         "&q=" +
         city +
@@ -39,7 +39,7 @@ let weather = {
   },
   fetchWeather: function (city) {
     fetch(
-      "http://api.weatherapi.com/v1/current.json?key=" +
+      "https://api.weatherapi.com/v1/current.json?key=" +
         this.apiKey +
         "&q=" +
         city +
@@ -95,7 +95,7 @@ let weather = {
     localStorage.setItem("cities", JSON.stringify(cities)); //setting the new array to the local storage by turning data into a string that you can work with
   },
 };
-let savedCities = JSON.parse(localStorage.getItem("cities"));
+let savedCities = JSON.parse(localStorage.getItem("cities")); //getting values from local storage (parse changes from a string to an array/object)
 if (savedCities !== null) {
   for (let i = 0; i < savedCities.length; i++) {
     weather.fetchWeather(savedCities[i].location.name);
